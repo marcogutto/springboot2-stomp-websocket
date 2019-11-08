@@ -1,0 +1,4 @@
+chat:
+  relay:
+    host: localhost
+    port: 61613

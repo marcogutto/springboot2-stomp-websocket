@@ -14,7 +14,7 @@ import domain.Message;
 public class MessageController {
     private static final Logger LOGGER = LoggerFactory.getLogger(MessageController.class);
 
-    @MessageMapping("/send")
+    @MessageMapping("/send.message")
     @SendTo("/topic/messages")
     public Message send(Message message) {
         LOGGER.info(String.format("Received message [%s] on `/app/chat` message mapping!", message.toString()));

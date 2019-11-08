@@ -18,18 +18,30 @@ public class Message {
     }
 
     public String getFrom() {
-        return from;
-    }
+		return from;
+	}
 
-    public String getMessage() {
-        return message;
-    }
+	public void setFrom(String from) {
+		this.from = from;
+	}
 
-    public LocalDateTime getTimeStamp() {
-        return timeStamp;
-    }
+	public String getMessage() {
+		return message;
+	}
 
-    @Override
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public LocalDateTime getTimeStamp() {
+		return timeStamp;
+	}
+
+	public void setTimeStamp(LocalDateTime timeStamp) {
+		this.timeStamp = timeStamp;
+	}
+
+	@Override
     public String toString() {
         return "Message{" +
                 "from='" + from + '\'' +
