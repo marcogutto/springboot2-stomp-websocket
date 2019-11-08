@@ -1,3 +1,8 @@
+server:
+  servlet:
+    context-path: /websocket
+  port: 8080
+
 chat:
   relay:
     host: localhost
